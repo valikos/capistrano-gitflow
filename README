@@ -13,6 +13,7 @@ local branch "staging" tracks "github/to-deploy".
 On Production Server:
 Pulls from "staging"; named "make-it-live".
 local branch "production" tracks "staging/staging".
+NOTE: Production pulls *only* from staging to prevent code from ending up on production without having gone through staging.
 
 Developers work on features in local branches, merge with master, and push to github.
 
