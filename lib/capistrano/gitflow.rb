@@ -5,7 +5,7 @@ require 'stringex'
 require 'capistrano/version'
 
 if defined?(Capistrano::VERSION) && Capistrano::VERSION.to_s.split('.').first.to_i >= 3
-  load File.expand_path("./tasks/gitflow.rake", __FILE__)
+  load File.expand_path("../tasks/gitflow.rake", __FILE__)
 else
   require 'gitflow/recipes/capistrano_legacy'
 end
