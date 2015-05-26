@@ -1,6 +1,3 @@
-before "deploy:updatde", "gitflow:calculate_tag"
-before "gitflow:calculate_tag", "gitflow:verify_up_to_date"
-
 namespace :gitflow do
   def last_tag_matching(pattern)
     # search for most recent (chronologically) tag matching the passed pattern, then get the name of that tag.
